@@ -6,6 +6,64 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Input Fragment"/>
+        android:text="Input Fragment"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextName"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="53dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="28dp"
+        android:text="Ingresa Nombre"
+        android:background="#ffffff" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextLastName"
+        android:layout_marginTop="27dp"
+        android:text="Ingresa Apellido"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignLeft="@+id/editTextName"
+        android:layout_alignStart="@+id/editTextName"
+        android:background="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:id="@+id/btnWeb"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/editTextLastName"
+        android:layout_centerHorizontal="true"
+        android:onClick="setURL" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="URL"
+        android:id="@+id/textURL"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/btnWeb"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEXTO PARSEADO"
+        android:id="@+id/textFromWeb"
+        android:layout_below="@+id/textURL"
+        android:layout_alignLeft="@+id/btnWeb"
+        android:layout_alignStart="@+id/btnWeb"
+        android:layout_marginTop="70dp" />
+
+
 
 </RelativeLayout>

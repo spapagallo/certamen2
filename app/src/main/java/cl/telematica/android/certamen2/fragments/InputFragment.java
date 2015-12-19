@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
 import cl.telematica.android.certamen2.R;
 
 public class InputFragment extends Fragment {
@@ -16,6 +17,9 @@ public class InputFragment extends Fragment {
      *
      * @return new instance of InputFragment
      */
+
+
+
     public static InputFragment newInstance() {
         InputFragment fragment = new InputFragment();
         return fragment;
